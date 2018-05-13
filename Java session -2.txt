@@ -1,0 +1,76 @@
+String Handling: String manipulation
+========================================
+toUpperCase()
+toLowerCase()
+replace()
+length()
+subString()
+indexOf()
+charAt()
+split()
+
+equals()
+ignoreCaseEquals()
+contains()
+startsWith()
+endsWith()
+etc.
+
+Array: is collecction of data or values 
+==========================
+-> multiple values can be stored on single variable 
+
+int n[] = {11,2,33233,22}; //single dimenssion array
+//or
+int a[] = new int[3]; //  // single d array 
+a[0] =11;
+a[1] =1122;
+a[2] =1133;
+
+** array index start at 0 postion , and last index is length-1
+
+
+int n[][] = {{1,2,3},{34,33,4}};  // 2 * 3
+//or 
+int aa[][] = new int[2][3]; //no of is 2 and col is 3 
+aa[0][0] =1;
+aa[0][1] =2;
+aa[0][2] =1;
+
+
+aa[1][0] =1;
+aa[1][1] =1;
+aa[1][2] =1;
+
+
+
+
+Loop: is iterator or repeation of statement 
+=================
+
+example:
+	1  2 3..  100
+Fundamentl of loop:
+i. iniit 			: 1
+ii. condition 			: 100
+iii. incrementer 		: +1
+
+
+
+
+There are following types of loop:
+i.while
+ii. for
+iii. do while
+iv. foreach / advance loop 
+
+
+
+
+
+
+
+
+
+
+

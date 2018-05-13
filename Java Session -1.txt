@@ -1,0 +1,236 @@
+Java Environment
+======================
+-JDK (java development kit) 
+-Version: 1.8 , 1.9 ,1.10(beta)
+-To check java verison:
+		open cmd:
+			>java -version 
+
+
+
+-Editor:
+	Eclipse:
+		-Oxygen   **
+		-Neon 3,2,1
+		-Mars  
+		-Juno
+		etc.
+
+
+JDK's components
+===========================
+-javac		: to convert java source code(.java) to byte code(.class)
+-jvm(jit)	: java virtual machine
+		: memory allocation, deallocation , GC
+		: JIT: just in teme which is interpreter 
+		  -> to convert byte to native code 
+-jre		: java runtime environment (library)
+
+
+Java Project's Structure
+==========================
+Project1
+	-src(source code)
+		-package1 : is collection of classes (known as module or folder)
+			-class1.java
+			-class2.java
+		-package2		
+	-jre(library)
+
+
+Identifiers or keywords or reserved words
+============================================
+package : is collection of classes, refere to current folder/module
+public  : is access specifier, which can be accessed from anywhere 
+class   : is wrapper of data member and function
+static	: is keyword, single memory allocation, can be accessed without object
+void	: no return 
+main	: is reserved function , startup function/ entry point 
+String	: is data type for alpha numeric 
+if	
+else
+switch
+case
+default
+break
+continue
+try
+catch
+for
+while
+do while
+etc.
+
+
+Syntax :
+=====================
+//	: single line comment
+/*	: multiple line comment 
+*/
+{}	: body of class, function, condition, loop , try catch etc.
+[]	: array: collection of data or values 
+()	: function ,condition , loop 
+;	: termination of statement  
+
+
+** Note: java is case sensetive 
+
+
+Hello World Program : addition of numbers
+==========================================
+
+
+
+
+===
+Data Type and Variable:
+===============
+Data Type   	: is container type of data 
+Variable	: is temp. memory where data can be stored 
+
+
+
+Data Type   
+-------------------------
+Primitive : single value 
+
+byte		: 1 byte	: byte a =12,;
+short		: 2 byte	
+int		: 4 byte
+long		: 8 byte
+
+float		: 4 byte	: float a =12333.433f;
+double		: 8 byte	: double d = 33333333.43434;
+
+char		: 2 byte	: char c ='1'
+
+boolean 	: true / false 
+
+
+
+Non-primitive : multi values (class type)
+
+Array
+ArrayList
+List 
+
+etc.
+
+
+
+Variable	 : how to declare variable
+===============
+
+correct
+------------
+int a =1;
+int a_b =33;
+int a1 =222;
+
+
+
+inccorrect
+------------
+int 1a =1;
+int a b =33;
+int a+b =222;
+
+
+Type of variable
+=====================
+-local
+-global
+	-instance variable
+	-static variable
+
+
+	
+
+
+Operator
+=============================
+Arithmetic:
+	+
+	-
+	*
+	/
+	%
+	example:
+	2+3*4 = 14
+	(2+3)*4 = 20
+	85/10 = 8
+	86%10 = 6
+
+Conditional operator:
+	>
+	>=
+	<
+	<=
+	==
+	!=
+Logical operator:
+	&&		- and  : if both condition are true then true 
+	||		- or 	: anyone true then true otherwise false
+
+Assignment Operator:
+	==			: a =10
+	+=			: a+=1    or a =a+1
+	-=
+	*=
+	/=
+Increment/Decrement:
+	++
+	--
+	postfix:
+		i++
+		i--
+	prefix:
+		++i
+		--i
+
+
+
+
+Condition  : is decision making statement 
+======================
+i. if 
+	a. if condition 
+	b. if else 
+	c. if else if else  ....
+	d. nested if else 
+
+ii. switch case 
+
+
+
+	
+	
+Loop  : is iterator or repeation of statement or instructions 
+========
+example:
+	1 2  ...100
+
+Fundamental of loop:
+	i. init / start 	: 1
+	ii. conidtion /limit  	: 100 
+	iii. steps/increment/derement: +1 
+
+
+there are following types:
+i. while
+ii. for
+iii.do while
+iv. for each / advance loop
+
+
+
+
+
+
+
+
+
+
+
+
+
