@@ -1,0 +1,114 @@
+package stringExample;
+
+import java.util.Scanner;
+
+public class stringex {
+
+	public static void main(String[] args) {
+
+		/*
+		 * wap to convert lower to upper case
+		 * wap to get count of space in sentence
+		 * raman sinha =1
+		 * this is java code = 3
+		 * wap to get count of word in sentence
+		 * 	is?  
+		 */
+		String str,nstr;
+		
+		Scanner sc =new Scanner(System.in);
+		
+		System.out.println("enter data :");
+		str = sc.nextLine(); //read  string input 
+		
+		System.out.println("you have entered :"+str);
+		
+		//there are following inbuilt functions
+		nstr = str.toUpperCase();
+		System.out.println(nstr);
+		
+		nstr = str.toLowerCase();
+		System.out.println(nstr);
+		
+		nstr = str.replace("a", "xy");
+		System.out.println(nstr);
+		
+		nstr = str.substring(0, 3); //cut 0,1st, 2nd index
+		System.out.println(nstr);
+				
+		nstr = str.trim(); //remove leading space
+		System.out.println(nstr);
+		
+		int ps;
+		ps = str.indexOf("m");//return position of m
+		System.out.println(ps);
+
+		char c;
+		c = str.charAt(1); // get 1st index char
+		System.out.println(c);
+		
+		//Split : break string into array by given index
+		//raman sinha = ["raman","sinha"]
+		String arr[] = str.split(" ");		
+		System.out.println(arr[0]); //print 1st word
+		
+		
+		//concat 
+		nstr = str.concat(" cs");
+		System.out.println(nstr);
+		
+		nstr = "cs "+str;
+		System.out.println(nstr);
+		
+		///conditional
+		if(str.equals("raman"))
+		{
+			System.out.println("raman is matched");
+		}
+		else
+		{
+			System.out.println("raman is not matched");
+		}
+	
+		//
+		if(str.equalsIgnoreCase("raman"))
+		{
+			System.out.println("raman matched");
+		}
+		else
+		{
+			System.out.println("raman is not matched");
+		}
+		
+		//
+		if(str.contains("ma"))
+		{
+			System.out.println("ma is exist");
+		}
+		else
+		{
+			System.out.println("ma doesn't  exist");
+		}
+		
+		//
+		if(str.startsWith("r"))
+		{
+			System.out.println("start with r");
+		}
+		else
+		{
+			System.out.println("not start with r");
+		}
+		
+		//
+		if(str.endsWith("n"))
+		{
+			System.out.println("last char is n");
+		}
+		else
+		{
+			System.out.println("last char is not n");
+		}
+	}
+
+}
