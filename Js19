@@ -1,0 +1,71 @@
+<html>
+    <body>
+        <table>
+           <tr>
+               <td>
+                   Name
+                   </td>
+                   <td>
+                       <input type="text" id="name" />
+
+                   </td>
+                </tr> 
+                <tr>
+                    <td>
+                        Age
+                    </td>
+                    <td>
+                        <input type="text" id="age"/>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Salary
+
+                    </td>
+                    <td>
+                        <input type="text" id="sal" />
+                        </td>
+                 </tr>
+                 <tr>
+                     <td>
+                         <input type="button" onclick="addRow()" value="Add">
+                     </td>
+                     <td>
+                         <input type="button" value="Remove">
+                     </td>
+                 </tr>
+        </table>
+
+        <table border="2" id="out"/>
+        
+        </table>
+        <script>
+                function addRow()
+                {
+                        var n,a,sal;
+                        n = document.getElementById('name').value;
+                        a = document.getElementById('age').value;
+                        sal = document.getElementById('sal').value;
+
+                        var s="<tr>";
+                                s= s+"<td>"+n     +"</td>";
+                                s= s+"<td>"+a     +"</td>";
+                                s= s+"<td>"+sal     +"</td>";
+                        s= s+"</tr>"
+
+                        //alert(s);
+                        document.getElementById('out').innerHTML=document.getElementById('out').innerHTML+s;
+                        
+
+
+
+                }
+
+
+        </script>
+
+    </body>
+
+</html>
