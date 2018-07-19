@@ -1,0 +1,84 @@
+Java Script
+=================
+data type  and variables
+function 
+objects
+array
+array function 
+sorting of object
+filter data
+
+
+
+
+
+data type  and variables
+==========================
+a = 10			: global varibale / can be access from anywere
+var d =333		: local varibale / can be access within function 
+let x =33		: block level  / within a block (if , for)
+
+
+
+data type:
+	-number
+		a =1
+		a =1.333
+	-string
+		a ="1.44sjhsh"
+	-boolean
+		a =true
+	-object
+		[111, 2, 2, 3, 2322]
+		{id: 1111, name: "jatin", gender: "male"}
+
+
+	-function 
+		function test(){
+console.log('hi');
+}
+
+objects
+====================
+a =[11,2,22,3,33,444] : is collection of data or values 
+	push(data) 	: add new element after last index
+	pop()	: pull/remove last element
+	splice(index,no.of elements) : remove elements 
+
+	
+	sort()
+	
+emp = 	[
+
+	{id:1,name:'jatin',gender:'male'},
+	{id:11,name:'monika',gender:'female'},
+	{id:211,name:'aman',gender:'male'},
+	{id:311,name:'chahat',gender:'female'},
+	{id:411,name:'kshitiz',gender:'male'},
+	{id:511,name:'nitisha',gender:'female'}
+	]
+
+
+
+--order by
+=> arrow function / interation 
+
+emp.sort((x,y)=> x.name.localeCompare(y.name))
+
+
+CRUD : create(push) , read (print) , udpate , delete  (pop, splice)
+
+Filter /search 
+======================
+emp.Filter(e => e.name = 'jatin')
+
+
+
+
+
+
+
+
+
+
+	
