@@ -1,0 +1,103 @@
+package dbConnection;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
+import java.util.Scanner;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+//jdbc ms sql server connector jar download
+/*
+ * add jar in project
+ * 1. right click on project 
+ * 2. go to properties
+ * 3. go to build path
+ * 4. go to library
+ * 5. Add external jar file
+ */
+public class conExample
+{
+
+	public static void udpateData()
+	{
+		try
+		{
+				
+					Scanner sc =new Scanner(System.in);
+					String name,email;
+
+					Class.forName("com.mysql.jdbc.Driver");
+					Connection con  = DriverManager.getConnection("jdbc:mysql://localhost/hrms", "root", "root");
+					
+					PreparedStatement st =con.prepareStatement("insert into emp(name,email)values(?,?)");
+			
+					
+					//update
+					System.out.println("enter new name :");
+					name = sc.nextLine();
+					
+					System.out.println("enter existing email :");
+					email= sc.nextLine();
+			
+					
+					st = con.prepareStatement("update emp set name=? where email=?");
+					st.setString(1, name);
+					st.setString(2, email);
+					
+					st.executeUpdate(); //insert,delete,udpate
+					
+					System.out.println("data udpated.");
+		}
+		catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+	public static void main(String[] args) 
+	{
+		try
+		{
+		
+			udpateData();
+			
+			Scanner sc =new Scanner(System.in);
+			String name,email;
+			
+			System.out.println("enter name :");
+			name = sc.nextLine();
+			
+			System.out.println("enter email :");
+			email= sc.nextLine();
+			
+			
+			Class.forName("com.mysql.jdbc.Driver");
+			Connection con  = DriverManager.getConnection("jdbc:mysql://localhost/hrms", "root", "root");
+			
+			PreparedStatement st =con.prepareStatement("insert into emp(name,email)values(?,?)");
+			st.setString(1, name);
+			st.setString(2, email);
+			
+			st.executeUpdate(); //insert,delete,udpate
+			System.out.println("data is saved");
+
+			
+			
+			//read data //select
+			st = con.prepareStatement("select * from emp"); 
+			ResultSet rs =  st.executeQuery();//select
+			
+			
+			while( rs.next())
+			{
+				System.out.println(rs.getString(1)+"\t"+rs.getString(2));
+			}
+			
+
+		}
+		catch (Exception e) 
+		{
+			
+		}
+
+	}
+}
