@@ -1,0 +1,68 @@
+Database
+=============================
+RDBMS : relational database management system
+There are following products that will come under RDBMS:
+
+
+-my sql server		**
+-ms sql server
+-oracle
+-ibm db2
+-congnose
+-mongodb
+-sqllite 
+
+Server/host : localhost   or ipaddress
+user    : root
+password : root
+
+dbname :	
+		hrms
+		sales
+	
+
+SQL Command
+==================
+show databases;			--list of existing database
+create database sales;		--create new database
+use sales;			--switch database
+create table customer		--create new table 
+	(
+	cid int,
+	cname varchar(100)
+	)
+
+	 
+desc tblname;		--show table structure 
+select * from customer;			-- show data , * : show all columns
+
+select cname,cid from customer;  --show one column
+
+select * from customer			--filter rows 
+where cid =1;	
+
+--save data 
+insert into customer(cid,cname)
+values(11,'raman');
+
+
+--delete row
+delete from customer;  --remove all rows
+
+delete from customer where cid  =1;  --delete selected rows 
+
+
+--update data 
+update customer 
+set cname ='jatin'
+where cid =2;
+
+
+
+	
+
+
+
+
+	
+		
