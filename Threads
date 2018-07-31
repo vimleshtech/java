@@ -1,0 +1,68 @@
+package threadEx;
+
+class abcd implements Runnable
+{ 
+	//Thread t=null;
+		abcd()
+			{
+				Thread t=new Thread(this,"Process- 3");
+				t.start();
+			}
+	@Override
+	public void run() {
+		for(int i =0;i<5;i++)
+		System.out.println("Process 3 "+i);
+		
+	}
+	
+}
+public class tEx  {
+
+	public static void main(String[] args) throws InterruptedException {
+
+		
+		Thread t =Thread.currentThread();
+		System.out.println(t);
+		
+		t.setName("new thread");
+		System.out.println(t);
+		System.out.println(t.getPriority());
+		System.out.println(t.getName());
+		System.out.println(t.isAlive());
+		
+		
+		newProces  o =new newProces ();
+		abcd p= new abcd();
+		for(int i=0; i<5;i++)
+		{
+			System.out.println("process 1: "+i);
+			Thread.sleep(500);
+		}
+	}
+
+}
+
+
+class newProces implements Runnable
+{
+	Thread th=null;
+	newProces()
+	{
+		th=new Thread(this,"Proces-2");
+		th.start(); //call run fun
+	}
+	
+	public void run()
+	{
+		for(int i=0; i<5;i++)
+		{
+			System.out.println("process -2 :"+i);
+			try {
+				Thread.sleep(500);
+			} catch (InterruptedException e) {
+				
+				e.printStackTrace();
+			}
+		}
+	}
+}
