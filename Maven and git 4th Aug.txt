@@ -1,0 +1,46 @@
+Todyas' Topic
+===================
+->Maven : is framework for build and dependency management
+		framework:  
+		build 	 : 
+		dependecy:
+
+				pom.xml
+
+		Create maven project:
+		1. catalog	
+			:quickstart
+		2. Group ID:   enterprise applicaiton/solution name
+		   Artifact ID:   applicaiton/project/mdoule name
+		
+		3. version:
+				1.0
+
+
+-> Version control:
+		GitHub:
+			https://www/github.com
+		https://github.com/vimleshtech/maventest.git
+	
+	git init
+	git add -A
+	git commit -m "message"
+	git remote add aliasname https://www/github.com/vimlestech/mavenproject.git
+	git push -u aliasname master
+
+
+	download/close
+	git clone https://www/github.com/vimlestech/mavenproject.git
+
+		SVN
+		TFS
+		etc.
+		
+->Jenkins 
+
+->Selenium IDE
+		
+
+
+group
+popup 	
