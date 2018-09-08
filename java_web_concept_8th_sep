@@ -1,0 +1,128 @@
+-Web Application Architecture
+-Client Server Architecture
+
+-HttpRequest
+-Servlet Life cycle
+	-dispatcher
+	-sendredirect
+-JSP vs Servlet 
+-State Management
+-web-inf
+-web.xml
+-context
+
+Web Application Architecture
+===========================
+Front End
+	-web page 	: html , jsp  			: page layout
+			: css, bootstrap			: beauty
+			: js, jquery, ajax			: client side action
+			: jqury -library of java sccript 
+			: difference between html and jsp 
+			-html : hyertext markup language : static contnets
+			-jsp : java server page : dynamic content 
+			      :jsp can contains java code within html tag 
+			
+	-Server Side coding/Language
+			-php
+			-java /servlet	: is extension java class which provider http 	
+				handler (http request handling features)
+				HttRequest (is class) : read and get html/web request 	
+
+				content/data 
+				HttpResponse (is class) : send content/reponse to web 	
+
+			page /web browser 
+
+
+			-c#
+			-python 			 				
+
+Back End: is database 
+		-My SQL Server
+		-MS SQL Server
+		-Oracle
+		etc.
+		
+	
+		
+
+Client Server Architecture
+==============================
+Client : web browser	to access the web applicaton / open web application
+	-IE
+	-Chrome
+	-Mozilla
+	-Opera
+	etc.
+Server : web server   - to develop and host/deploy web application 
+	-Apahce Tomcat
+	-GlassFish 
+	-Wamp
+	-Xamp
+	-Lamp
+	-JBoss
+	etc.
+
+	
+
+Http: hypertext transfer protocal which is responsiable to send the request from web browser to 
+
+web server and recieve the reponse from webserver to web browser 
+================
+
+
+-Servlet Life cycle
+	-dispatcher
+	-sendredirect
+=========================
+doGet()
+doPost()
+
+<form  action="toservlet"  
+		default is : get 		:data will send in url/querysting
+		method=""  : get		:data will send in url/querysting
+		method="get"  : get		:data will send in url/querysting
+			-get can bookmark
+			-get can send to other web application 
+				example : login with gmail, facebook
+
+		method="post"  : post	: data will send in body/will be hidden	
+			-confidential / pwd /secure
+			-alot of data 
+				
+
+
+JSP vs Servlet 
+=================
+Jsp : is java server page 
+	: html file where java code can be embeded
+Servlet :
+	-java file to handle the http request
+	-java file/code where html code can be embeded
+	
+State Management : web applications work on http protocal which is stateless
+====================
+There are following way to manage state of data:
+-client side
+	-cookies		: applicaiton level within browser
+			: example: rember pwd
+	-hidden field	: page level
+	-cache 		: page level , event level
+-server side
+	-session 		: applicaiton level server / will work like global variable 
+
+
+
+-web-inf
+	-lib
+		-all library of java applications
+-web.xml	: is configuration file
+	-welcome page / startup page / landling page
+	-session timeout
+	
+		
+-context : is global variable which can access from anywhere within application 
+
+		
+
